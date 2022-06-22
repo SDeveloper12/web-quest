@@ -1,0 +1,387 @@
+@font-face {
+	font-family: 'Caviar Dreams';
+	src: url('../fonts/h1/caviar_dreams.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/h1/caviar_dreams.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/h1/caviar_dreams.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/h1/caviar_dreams.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/h1/caviar_dreams.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/h1/caviar_dreams.svg#caviar_dreams') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'GOGOIA Deco';
+	src: url('../fonts/menu/gogoia_deco.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/menu/gogoia_deco.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/menu/gogoia_deco.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/menu/gogoia_deco.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/menu/menu/gogoia_deco.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/menu/gogoia_deco.svg#gogoia_deco') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+h1, h2 {
+    font-family: 'Caviar Dreams';
+    text-align: center;
+    margin: 50px auto;
+}
+.h2 {
+    margin: 0;
+}
+header {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #9EFD9C;
+}
+.logo_img {
+    display: inherit;
+}
+.logo_img img{
+    width: 70px;
+}
+.menu {
+    display: flex;
+}
+.head_menu {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sections {
+    padding: 10px 25px;
+    border-radius: 10px;
+    background-color: #3CD84C;
+    color: black;
+    font-size: 16px;
+    list-style-type: none;
+    display: inline-flex;
+    margin: 20px;
+    width: 80px;
+    font-family: 'Caviar Dreams';
+    font-weight: 900;
+    justify-content: center;
+}
+.poisk input{
+    margin: 20px;
+    width: 170px;
+    height: 30px;
+    border-radius: 20px;
+
+}
+.name_of_quest a{
+font-family: 'GOGOIA Deco';
+font-size: 48px;
+text-decoration: none;
+color: black;
+}
+.button_for_quest {
+    font-family: 'GOGOIA Deco';
+    padding: 10px 25px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 24px;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 10px auto;
+}
+.head {
+    
+    display: flex;
+    flex-wrap: wrap;
+    background: #9EFD9C;
+    justify-content: center;
+}
+.right_col img, .left_col img{
+    width: 100%;
+    max-width: 500px;
+}
+
+.right_col{
+display: flex;
+position: relative;
+align-items: center;
+justify-content: center;
+}
+.left_col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+.center_col {
+    border-radius: 20px;
+    background-color: white;
+    align-self: center;
+    justify-self: center;
+    padding: 20px;
+}
+
+.start_to_go {
+    font-size: 24px;
+    list-style-type: '*';
+    padding-inline-start: 3ch;
+}
+
+.text_quest {
+    position: absolute;
+    display: block;
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Caviar Dreams';
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*  Преимущества   */
+
+.advant {
+width: 300px;
+height: 300px;
+border-radius: 20px;
+box-shadow: 10px 10px rgba(230, 57, 155, 0.4);
+display: flex;
+margin: 20px;
+}
+.nom1{
+    background-repeat: no-repeat;
+    background-image: url('../image/image 9.png');
+    background-size: 100%;
+    
+}
+.nom2{
+    background-repeat: no-repeat;
+    background-image: url('../image/image 10.png');
+    background-size: 100%;
+}
+.nom3{
+    background-repeat: no-repeat;
+    background-image: url('../image/image 11.png');
+    background-size: 100%;
+}
+.text_adv {
+    text-align:  center;
+    font-size: 30px;
+    font-family: 'GOGOIA Deco';
+    padding: 0px;
+    align-self: flex-end;
+    margin: 0;
+    width: 100%;
+}
+.text_adv span{
+    font-family: initial;
+    text-align:  center;
+    font-size: 64px;
+    float: left;
+    opacity: 0.5;
+}
+
+.advantages {
+ display: flex; 
+ justify-content: center;  
+ flex-wrap: wrap;
+}
+.popular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.popul_quests {
+    border-radius: 20px;
+    margin: 0 50px;
+}
+/* Популярное */
+.pl {
+    padding: 20px;
+}
+.pl p {
+    font-family: 'Caviar Dreams';
+    font-size: 24px;
+    text-align: center;
+}
+.pl a {
+    display: block;
+}
+.pop{
+color: white;
+background-color: black;
+text-align: center;
+}
+.more{
+    display: block;
+    margin:  20px auto;
+    width: 200px;
+    height: 30px;
+    color: white;
+    background-color: #E30091;
+    text-align: center;
+    font-size: 30px;
+    }
+.two img{
+    background-color: rgb(245, 214, 167);
+}
+.find {
+    margin: 10px auto;
+    padding: 7px 30px;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+}
+/* Футер */
+footer {
+    margin-top: 50px;
+    display: flex;
+    background-color: #3CD84C;
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.sections_footer {
+    font-family: 'GOGOIA Deco';
+    color: black;
+    font-size: 24px;
+    font-family: 'Pollock1CTTRegular';
+    list-style-type: none;
+    display: inline-flex;
+    margin: 20px;
+    padding: 10px 45px;
+    border-radius: 10px;
+    background-color: #3CD84C;
+    font-family: 'Caviar Dreams';
+    font-weight: 900;
+}
+.sections a, .sections_footer a {
+    color: black;
+    text-decoration: none;
+}
+.choose_your_quest {
+    font-family: 'GOGOIA Deco';
+    padding: 10px 45px;
+    border-radius: 10px;
+    border: #3CD84C solid;
+    font-size: 24px;
+    display: inline-flex;
+    margin: 20px;
+}
+/* О нас */
+.com {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.new {
+    font-family: 'Caviar Dreams';
+    display: block;
+    width: 50%;
+    font-size: 24px;
+}
+.zagolovok {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Caviar Dreams';
+    width: 30%;
+    display: block;
+}
+.com img{
+    width: 50%;
+    max-width: 350px;
+    margin: 0 50px;
+}
+/* Рейтинг */
+.tb_cont {
+    overflow: scroll;
+    width: 100%;
+}
+table {
+    border: black  solid 5px;
+    background: lightgrey;
+    width: auto;
+    font-size: 24px;
+    margin: auto;
+    
+}
+td {
+    border: black solid 5px;
+    padding: 50px 100px;
+    text-align: center;
+    font-family: 'Caviar Dreams';
+    font-weight: bold;
+}
+.accordion input {
+display: none;
+}
+.soder {
+    display: none;
+}
+.accordion input:checked ~
+.soder {
+    margin: auto;
+    display:block;
+    text-align: center;
+}
+.img_art img{
+    width: 100%;
+
+}
+.article {
+    max-width: 874px;;
+    border: 1px solid black;
+    margin: 50px auto;
+    position: relative;
+    border-radius: 20px;
+    padding: 30px;
+}
+.stat {
+    position: absolute;
+    align-self: flex-start;
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+    width: 50%;
+    padding: 10px 20px;
+    margin: 0;
+    font-size: 20px;
+    font-family:  'Caviar Dreams';
+}
+.discrip {
+    font-size: 25px;
+    font-family:  'Caviar Dreams';
+}
+.soder a:link, p a:link {
+    color: black;
+    text-decoration: none;
+}
+.soder a:visited, p a:visited {
+    color: black;
+    text-decoration: none;
+}
+@media (max-width: 530px) {
+    .str {
+        font-family: 'GOGOIA Deco';
+        padding: 1px 5px;
+        border-radius: 10px;
+        background-color: white;
+        color: black;
+        font-size: 18px;
+        list-style-type: none;
+        text-decoration: none;
+    }
+    .text_quest {
+        position: absolute;
+        display: block;
+        color: white;
+        font-size: 1.5rem;
+        font-family: 'Caviar Dreams';
+        margin: 0 auto;
+        text-align: center;
+    }
+    .stat {
+        font-size: 10px;
+        padding: 0;
+    }
+}
