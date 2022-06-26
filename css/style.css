@@ -65,7 +65,7 @@ header {
     font-weight: 900;
     justify-content: center;
 }
-.poisk input{
+.poisk input, input[type="text"]{
     margin: 20px;
     width: 170px;
     height: 30px;
@@ -88,6 +88,7 @@ color: black;
     list-style-type: none;
     text-decoration: none;
     margin: 10px auto;
+    width: 195px;
 }
 .head {
     
@@ -194,9 +195,76 @@ margin: 20px;
     border-radius: 20px;
     margin: 0 50px;
 }
+.carousel {
+    position: relative;
+    width: 800px;
+    border: 1px solid #CCC;
+    border-radius: 15px;
+    background: rgb(255, 255, 255);
+    margin: 0 auto;
+  }
+  
+  .carousel img {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
+    display: block;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 60px;
+    padding: 0;
+    background: #ddd;
+    border-radius: 15px;
+    border: 1px solid gray;
+    font-size: 24px;
+    line-height: 24px;
+    color: #444;
+    display: block;
+  }
+  
+  .arrow:focus {
+    outline: none;
+  }
+  
+  .arrow:hover {
+    background: #ccc;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 7px;
+  }
+  
+  .next {
+    right: 7px;
+  }
+  
+  .gallery {
+    width: 800px;
+    overflow: hidden;
+  }
+  
+  .gallery ul {
+    height: 350px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 250ms;
+    /* удаляем пустое пространство между элементами li, у которых установлен inline-block */
+    /* http://davidwalsh.name/remove-whitespace-inline-block */
+    font-size: 0;
+  }
+  
+  .gallery .pl {
+    display: inline-block;
+  }
 /* Популярное */
 .pl {
-    padding: 20px;
+    padding: 10px;
 }
 .pl p {
     font-family: 'Caviar Dreams';
@@ -210,6 +278,10 @@ margin: 20px;
 color: white;
 background-color: black;
 text-align: center;
+cursor: pointer;
+}
+.hd {
+    float: right;
 }
 .more{
     display: block;
@@ -303,14 +375,22 @@ table {
     width: auto;
     font-size: 24px;
     margin: auto;
-    
+    border-collapse: collapse;
 }
 td {
-    border: black solid 5px;
-    padding: 50px 100px;
+    border: black  solid 5px;
+    padding: 20px 55px;
     text-align: center;
     font-family: 'Caviar Dreams';
     font-weight: bold;
+}
+th {
+    border: black  solid 5px;
+    padding: 20px 55px;
+    text-align: center;
+    font-family: 'Caviar Dreams';
+    font-weight: bold;
+    background: grey;
 }
 .accordion input {
 display: none;
@@ -352,13 +432,60 @@ display: none;
     font-size: 25px;
     font-family:  'Caviar Dreams';
 }
-.soder a:link, p a:link {
+.soder a:link, p a:link, .modal a:link {
     color: black;
     text-decoration: none;
 }
-.soder a:visited, p a:visited {
+.soder a:visited, p a:visited, .modal a:visited{
     color: black;
     text-decoration: none;
+}
+.banner img {
+    width: 100%;
+    display: block;
+}
+.banner {
+    position: relative;
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+}
+.tema {
+display: block;
+position: absolute;
+color: white;
+background-color: black;
+opacity: 0.7;
+font-size: 48px;
+margin: 0;
+width: 100%;
+height: 30%;
+text-align: center;
+padding: 10% 0;
+}
+span {
+    font-size: 30px;
+}
+form img {
+    padding-bottom: 20px;
+    width: 450px;
+}
+.modal {
+    width: 50%;
+    border-radius: 20px;
+    border: solid #eee;
+    text-align: center;
+    margin: auto;
+}
+.modal img {
+    width:100%;
+}
+.close {
+    background-color: #3CD84C;
+    width: 100px;
+}
+.modal {
+    display: none;
 }
 @media (max-width: 530px) {
     .str {
@@ -383,5 +510,24 @@ display: none;
     .stat {
         font-size: 10px;
         padding: 0;
+    }
+}
+@media (max-width: 900px) {
+    .gallery {
+        width: 265px;
+        }
+    .carousel {
+        width  : 265px;
+        }
+    .tema {
+        font-size: 30px;
+    }
+    span {
+        font-size: 12px;
+    }
+}
+@media (max-width: 500px) {
+    form img {
+        width: 300px;
     }
 }
