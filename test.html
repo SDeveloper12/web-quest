@@ -1,0 +1,77 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="image/favicon.png" type="image/png">
+        <title>Влияние текста</title>
+    </head>
+    <body>
+        <div class="banner">
+            <img src="image/text.jpg">
+            <p class="tema">Влияние текста
+            <br><span>Данный квест включает вопросы по юзабилити текста</span></p>
+        </div>
+        <div class="container">
+        <form  id="show-modal">
+            <a href="index.html" class="button_for_quest pop hd">На главную</a>
+            <h3>Введите Ваше имя или никнейм</h3>
+
+            <input type="text" placeholder="Имя" size="100" maxsize="250" />
+            <h3>1. Выберите оптимальный размер шрифта для основного текста.</h3>
+            <input type="radio" id="ques11" name="q1" value="1">
+            <label for="ques11">6-10 px</label><br>
+            <input type="radio" id="ques12" name="q1" value="2">
+            <label for="ques12">12-16 px</label><br>
+            <input type="radio" id="ques13" name="q1" value="3">
+            <label for="ques13">18-22 px</label><br><br><hr>
+
+            <h3>2. Какова оптимальная длина строки всесте с пробелами для основного текста?</h3>
+            <input type="radio" id="ques21" name="q2" value="1">
+            <label for="ques21">50-60 символов</label><br>
+            <input type="radio" id="ques22" name="q2" value="2">
+            <label for="ques22">70-80 символов</label><br>
+            <input type="radio" id="ques23" name="q2" value="3">
+            <label for="ques23">свыше 80 символов</label><br><br><hr>
+
+            <h3>3. Посмотрите на изобржение, определите основную ошибку в дизайне.</h3>
+            <img src="image/контраст1.jpg"><br>
+            <input type="radio" id="ques31" name="q2" value="1">
+            <label for="ques31">много информации</label><br>
+            <input type="radio" id="ques32" name="q2" value="2">
+            <label for="ques32">низкий контраст</label><br>
+            <input type="radio" id="ques33" name="q2" value="3">
+            <label for="ques33">нет структурированности</label><br><br><hr>
+
+            <h3>4. Выберите стандартные шрифты для текста.</h3>
+            <input type="radio" id="ques41" name="q4" value="1">
+            <label for="ques41">sans-serif шрифты: Arial, Helvetica, Trebuchet, Lucida Sans, Verdana</label><br>
+            <input type="radio" id="ques42" name="q4" value="2">
+            <label for="ques42">serif шрифты: Bodoni, Caslon, Trajan, Eames Century Modern</label><br>
+            <input type="radio" id="ques43" name="q4" value="3">
+            <label for="ques43">cursive шрифты: Comic Sans MS, Shelley, Bickham, Brush Script MT</label><br><br><hr>
+
+            <h3>5. Посмотрите на изобржение. В чем ошибка?</h3>
+            <img src="image/выравнивание.png"><br>
+            <input type="radio" id="ques51" name="q5" value="1">
+            <label for="ques51">в количестве символов</label><br>
+            <input type="radio" id="ques52" name="q5" value="2">
+            <label for="ques52">в неправильно подобранном шрифте</label><br>
+            <input type="radio" id="ques53" name="q5" value="3">
+            <label for="ques53">в выравнивании по ширине</label><br><br><hr>
+            <br><br>
+        
+            <input type="submit" class="button_for_quest pop" value="Результат" id="result"/>
+        </form>
+    </div>
+<div class="modal" id="myModal">
+    <img src="image/pozd.png">
+    <h2>Вы набрали <span></span> баллa(ов)</h2>
+    <a href="rang.html"><div class="button_for_quest close">Рейтинг</div></a>
+</div>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="new.js"></script>
+    </body>
+    </html>
